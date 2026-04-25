@@ -1,1 +1,117 @@
-# infografia
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografía: Herramientas para Tablas de Frecuencias</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f3f4f6;
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="py-8 px-4 sm:px-8">
+
+    <!-- Contenedor Principal de la Infografía -->
+    <div class="max-w-2xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden fade-in">
+        
+        <!-- Encabezado -->
+        <header class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white p-8 text-center relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-full opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+            <div class="relative z-10">
+                <i class="fas fa-chart-pie text-5xl mb-4 animate-bounce"></i>
+                <h1 class="text-3xl font-bold tracking-tight mb-2">3 Herramientas en Línea</h1>
+                <h2 class="text-xl font-light">Para generar Tablas de Frecuencias</h2>
+                <p class="mt-4 text-sm bg-white/20 inline-block px-4 py-2 rounded-full backdrop-blur-sm">Rápidas, gratuitas y fáciles de usar</p>
+            </div>
+        </header>
+
+        <!-- Introducción -->
+        <div class="p-6 text-center text-gray-600 border-b border-gray-100">
+            <p>¿Tienes un conjunto de datos estadísticos y necesitas organizarlos rápidamente? Estas tres herramientas web harán el trabajo pesado por ti calculando frecuencias absolutas, relativas y acumuladas.</p>
+        </div>
+
+        <!-- Herramienta 1 -->
+        <div class="p-8 border-b border-gray-100 relative group transition-colors hover:bg-blue-50">
+            <div class="absolute -left-6 top-10 bg-blue-500 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl shadow-lg border-4 border-white z-10 hidden sm:flex">1</div>
+            
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6 pl-0 sm:pl-8">
+                <div class="bg-blue-100 text-blue-600 p-5 rounded-2xl shrink-0">
+                    <i class="fas fa-square-root-variable text-4xl"></i>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">GeoGebra</h3>
+                    <p class="text-gray-600 mb-4 text-sm">Una plataforma matemática integral y muy visual. Su sección de "Hoja de Cálculo" y "Análisis de Datos" permite crear tablas completas y dinámicas con solo unos clics.</p>
+                    
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <li class="flex items-center gap-2"><i class="fas fa-check-circle text-blue-500"></i> <b>Ideal para:</b> Estudiantes y profesores.</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check-circle text-blue-500"></i> <b>Ventaja:</b> Genera histogramas y gráficos automáticamente vinculados a tu tabla.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Herramienta 2 -->
+        <div class="p-8 border-b border-gray-100 relative group transition-colors hover:bg-green-50">
+            <div class="absolute -left-6 top-10 bg-green-500 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl shadow-lg border-4 border-white z-10 hidden sm:flex">2</div>
+            
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6 pl-0 sm:pl-8">
+                <div class="bg-green-100 text-green-600 p-5 rounded-2xl shrink-0">
+                    <i class="fas fa-calculator text-4xl"></i>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">MathCracker</h3>
+                    <p class="text-gray-600 mb-4 text-sm">Una calculadora estadística en línea enfocada en la resolución de problemas paso a paso. Solo pegas tus datos separados por comas y el sistema hace el resto.</p>
+                    
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <li class="flex items-center gap-2"><i class="fas fa-check-circle text-green-500"></i> <b>Ideal para:</b> Aprender el proceso manual.</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check-circle text-green-500"></i> <b>Ventaja:</b> Muestra las fórmulas y los pasos que se tomaron para llegar al resultado.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Herramienta 3 -->
+        <div class="p-8 relative group transition-colors hover:bg-orange-50">
+            <div class="absolute -left-6 top-10 bg-orange-500 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl shadow-lg border-4 border-white z-10 hidden sm:flex">3</div>
+            
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6 pl-0 sm:pl-8">
+                <div class="bg-orange-100 text-orange-600 p-5 rounded-2xl shrink-0">
+                    <i class="fas fa-bolt text-4xl px-2"></i>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Alcula</h3>
+                    <p class="text-gray-600 mb-4 text-sm">La herramienta más minimalista de la lista. Su interfaz es extremadamente sencilla y va directo al grano, sin configuraciones complejas ni distracciones visuales.</p>
+                    
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <li class="flex items-center gap-2"><i class="fas fa-check-circle text-orange-500"></i> <b>Ideal para:</b> Cálculos urgentes y rápidos.</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check-circle text-orange-500"></i> <b>Ventaja:</b> Procesamiento ultrarrápido y exportación de resultados muy limpia.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pie de Infografía -->
+        <footer class="bg-gray-800 text-white p-6 text-center">
+            <h4 class="text-lg font-semibold mb-2">¡Consejo Pro! 💡</h4>
+            <p class="text-sm text-gray-300 mb-4">Antes de usar estas herramientas, asegúrate de saber si tus datos son <strong>agrupados</strong> (en intervalos) o <strong>no agrupados</strong>, ya que la configuración cambiará.</p>
+            <div class="inline-flex items-center justify-center gap-2 text-xs font-mono bg-gray-900 px-4 py-2 rounded-full text-gray-400">
+                <i class="fas fa-laptop-code"></i> Diseño de Infografía
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>
